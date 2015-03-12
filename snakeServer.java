@@ -23,7 +23,7 @@ public class snakeServer {
 	public void startServer(){
 		
 		try{
-			server = new ServerSocket(this.port, this.players*2);
+			server = new ServerSocket(this.port, this.players);
 			while(true){
 				try{
 					for (int i = 0; i < this.players; i++) {
@@ -65,6 +65,7 @@ public class snakeServer {
 
 	private void gameLoop() {
 		// TODO GameLoop
+		while(true){}
 		
 	}
 
